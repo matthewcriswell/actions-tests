@@ -36,4 +36,5 @@ jobs:
           echo test, and deploy your project.
       #testing stuff   
       - name: print env 
+        id: get_env
         run: env
