@@ -24,7 +24,8 @@ jobs:
         run: env
 
       - name: set some vars
-        env: HAMBURGER: ${{ secrets.HAMBURGER }}
+        env:
+          HAMBURGER: ${{ secrets.HAMBURGER }}
 #after
       - name: print env
         run: env
