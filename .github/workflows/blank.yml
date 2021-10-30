@@ -25,7 +25,7 @@ jobs:
 
       - name: set some vars
         env:
-          HAMBURGER: ${{ secrets.HAMBURGER }}
+          REPOMAN: ${{ secrets.REPOMAN }}
 #after
       - name: print env
         run: env
