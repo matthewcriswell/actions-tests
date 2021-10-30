@@ -19,9 +19,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-#custom      
+#before      
       - name: print env
         run: env
+
+      - name: set some vars
+        env: HAMBURGER: ${{ secrets.HAMBURGER }}
+#after
+      - name: print env
+        run: env
+      
 
 #demo stuff 
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
