@@ -39,4 +39,4 @@ jobs:
         id: get_env
         run: env
       - name: output test
-        run: echo '::warning:: this is a warning'
+        run: echo "::warning:: this is a warning"
