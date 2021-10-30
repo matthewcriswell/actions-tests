@@ -34,6 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      #I want to observe the environment    
-      - name: sleep for a long time 
-        run: sleep 100000
+      #testing stuff   
+      - name: print env 
+        run: env
