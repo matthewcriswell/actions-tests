@@ -22,12 +22,10 @@ jobs:
 #before      
       - name: print env
         run: env
-
+#after
       - name: set some vars
         env:
           REPOMAN: ${{ secrets.REPOMAN }}
-#after
-      - name: print env
         run: env
       
 
