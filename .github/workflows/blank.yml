@@ -27,7 +27,9 @@ jobs:
         env:
           REPOMAN: ${{ secrets.REPOMAN }}
         run: env
-      - name: print env
+
+      - name: bash env
+        shell: bash
         env:
            BURGER_ORDER: ${{ secrets.BURGER_ORDER }}
         run: |
