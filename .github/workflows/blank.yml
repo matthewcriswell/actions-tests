@@ -38,3 +38,5 @@ jobs:
       - name: print env 
         id: get_env
         run: env
+      - name: output test
+        run: echo '::warning:: this is a warning'
