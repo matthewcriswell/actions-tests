@@ -1,0 +1,15 @@
+name: input stuff
+
+on:
+  workflow_dispatch:
+    inputs:
+      first:
+        description: "A field"
+        required: true
+        default: "some entry"
+jobs:
+  say_hello:
+    runs-on: self-hosted
+    steps:
+    - run: |
+      echo "Hello $!"
