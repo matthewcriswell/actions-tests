@@ -27,6 +27,13 @@ jobs:
         env:
           REPOMAN: ${{ secrets.REPOMAN }}
         run: env
+        
+      - name: simple print
+        shell: bash
+        env:
+          FOO: "bar"
+        run: |
+          echo $FOO
 
       - name: bash env
         shell: bash
