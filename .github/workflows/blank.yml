@@ -34,6 +34,13 @@ jobs:
           FOO: "bar"
         run: |
           echo $FOO
+          
+      - name: false secret
+        shell: bash
+        env:
+          BOGUS: ${{ secrets.NOEXIST }}
+        run: |
+          echo $BOGUS
 
       - name: bash env
         shell: bash
