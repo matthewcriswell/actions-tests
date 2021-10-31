@@ -50,6 +50,7 @@ jobs:
         shell: bash
         env:
            BURGER_ORDER: ${{ secrets.BURGER_ORDER }}
+           FOO: "barbar"
         run: |
           echo "Hello!"
           echo $BURGER_ORDER
