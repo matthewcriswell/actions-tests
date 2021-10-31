@@ -33,7 +33,7 @@ jobs:
         env:
            BURGER_ORDER: ${{ secrets.BURGER_ORDER }}
         run: |
-          echo ${BURGER_ORDER}
+          echo $BURGER_ORDER
       
 
 #demo stuff 
