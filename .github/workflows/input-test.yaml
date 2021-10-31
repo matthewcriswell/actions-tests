@@ -15,5 +15,5 @@ jobs:
     - name: print some things
       run: |
         echo "Hello $!"
-        ehco "again: ${{ github.event.inputs.first }}"
+        echo "again: ${{ github.event.inputs.first }}"
         echo "boop"
