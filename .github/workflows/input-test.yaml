@@ -7,10 +7,12 @@ on:
         description: "A field"
         required: true
         default: "some entry"
+        
 jobs:
   say_hello:
     runs-on: self-hosted
     steps:
-    - run: |
-#      echo "Hello $!"
-      echo "boop"
+    - name: print some things
+      run: |
+        echo "Hello $!"
+        echo "boop"
