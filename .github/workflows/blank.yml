@@ -51,7 +51,10 @@ jobs:
         env:
            BURGER_ORDER: ${{ secrets.BURGER_ORDER }}
         run: |
+          echo "Hello!"
           echo $BURGER_ORDER
+          echo $FOO
+          echo "Goodbye!"
       
 
 #demo stuff 
