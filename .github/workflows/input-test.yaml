@@ -14,6 +14,4 @@ jobs:
     steps:
     - name: print some things
       run: |
-        echo "Hello $!"
         echo "again: ${{ github.event.inputs.first }}"
-        echo "boop"
