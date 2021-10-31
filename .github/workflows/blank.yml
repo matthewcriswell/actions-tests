@@ -30,7 +30,7 @@ jobs:
     
       - name: run a simple command
         shell: bash
-        run: ip l s
+        run: ping -c 1 8.8.8.8
         
       - name: simple print
         shell: bash
