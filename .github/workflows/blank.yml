@@ -27,6 +27,9 @@ jobs:
         env:
           REPOMAN: ${{ secrets.REPOMAN }}
         run: env
+    
+      - name: run a simple command
+        run: ip l s
         
       - name: simple print
         shell: bash
