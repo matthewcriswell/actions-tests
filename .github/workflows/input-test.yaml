@@ -6,7 +6,7 @@ on:
       first:
         description: "A field"
         required: true
-        default: "some entry"
+        default: "field1val"
         
 jobs:
   say_hello:
