@@ -7,6 +7,10 @@ on:
         description: "A field"
         required: true
         default: "field1val"
+      hedonic_treadmill:
+        description: "How happy are you?"
+        required: true
+        default: "default"
         
 jobs:
   say_hello:
@@ -15,3 +19,9 @@ jobs:
     - name: print some things
       run: |
         echo "again: ${{ github.event.inputs.first }}"
+  control_flow_test:
+    runs-on: self-hosted
+    steps:
+    - name: evalutate and print something
+      run: |
+        echo "You should not do control flow within the workflow.  Use an action instead."
