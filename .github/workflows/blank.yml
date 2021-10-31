@@ -15,7 +15,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
+    environment: chicago
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
@@ -49,11 +49,11 @@ jobs:
       - name: bash env
         shell: bash
         env:
-           BURGER_ORDER: ${{ secrets.BURGER_ORDER }}
+           STREET_FOOD: ${{ secrets.STREET_FOOD }}
            FOO: "barbar"
         run: |
           echo "Hello!"
-          echo $BURGER_ORDER
+          echo $STREET_FOOD
           echo $FOO
           echo "Goodbye!"
       
