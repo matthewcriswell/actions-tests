@@ -22,6 +22,6 @@ kubectl cluster-info --context kind-kind
 #echo "secrets" >> /usr/local/sensitive_data.txt
 
 # usually for debugging
-#sleep 100000
+sleep 100000
 
 echo "::set-output name=time::$time"
