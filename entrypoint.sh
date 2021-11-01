@@ -6,7 +6,7 @@ echo "!!! ls -lah !!!"
 ls -lah 
 echo "!!! pwd !!!"
 pwd
-ech "!!! env !!!"
+echo "!!! env !!!"
 env
 
 echo "::set-output name=time::$time"
