@@ -2,8 +2,11 @@
 
 echo "Hello $1"
 time=$(date)
-echo "THIS IS A TEST"
+echo "!!! ls -lah !!!"
+ls -lah 
+echo "!!! pwd !!!"
 pwd
+ech "!!! env !!!"
 env
 
 echo "::set-output name=time::$time"
