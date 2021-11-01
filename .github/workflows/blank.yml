@@ -19,26 +19,22 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-#before      
-      - name: print env
-        run: env
-#during
-      - name: set some vars
-        env:
-          REPOMAN: ${{ secrets.REPOMAN }}
-        run: env
+
     
+      # run a simple command   
       - name: run a simple command
         shell: bash
         run: ping -c 1 8.8.8.8
         
+      # how to use a variable with a command
       - name: simple print
         shell: bash
         env:
           FOO: "bar"
         run: |
           echo $FOO
-          
+
+      #what happens when you use a secret that doesn't exist          
       - name: false secret
         shell: bash
         env:
@@ -46,9 +42,11 @@ jobs:
         run: |
           echo $BOGUS
 
+      # how to use github environment variables and a secret in a step
       - name: bash env
         shell: bash
         env:
+           #STREET_FOOD should change based on the github environment setting
            STREET_FOOD: ${{ secrets.STREET_FOOD }}
            FOO: "barbar"
         run: |
